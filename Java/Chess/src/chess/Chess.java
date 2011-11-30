@@ -1,12 +1,11 @@
 package chess;
 
-public class Main
+public class Chess
 {
 	public static void main(String args[])
 	{
 		Set blackSet;
 		Set whiteSet;
-		Piece[] pieces;
 		
 		System.out.println("hello chess!");
 		

@@ -35,7 +35,6 @@
     <Reference Include="gtk-sharp, Version=2.12.0.0, Culture=neutral, PublicKeyToken=35e10195dab3c99f" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="King.cs" />
     <Compile Include="Rook.cs" />
@@ -46,6 +45,7 @@
     <Compile Include="Position.cs" />
     <Compile Include="Piece.cs" />
     <Compile Include="Set.cs" />
+    <Compile Include="Chess.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
