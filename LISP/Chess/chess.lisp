@@ -27,10 +27,7 @@
     (color
       :accessor piece-color
       :initarg color
-      :initform 1)
-    (pos
-      :accessor piece-pos
-      :initarg pos)))
+      :initform 1)))
 
 (defclass king (piece)
   ((name :initform "King")))
