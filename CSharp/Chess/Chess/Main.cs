@@ -6,17 +6,17 @@ namespace Chess
 	{
 		public static void Main (string[] args)
 		{
-			ChessSet blackSet = new ChessSet(ChessColor.Black);
-			ChessSet whiteSet = new ChessSet(ChessColor.White);
+			Set blackSet = new Set(Color.Black);
+			Set whiteSet = new Set(Color.White);
 			
 			Console.WriteLine("Hello Chess!");
 			
-			foreach (ChessPiece piece in blackSet.pieces)
+			foreach (Piece piece in blackSet.pieces)
 			{
 				Console.WriteLine(piece);
 			}
 			
-			foreach (ChessPiece piece in whiteSet.pieces)
+			foreach (Piece piece in whiteSet.pieces)
 			{
 				Console.WriteLine(piece);
 			}

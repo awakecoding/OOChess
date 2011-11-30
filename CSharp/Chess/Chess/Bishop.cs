@@ -2,11 +2,11 @@ using System;
 
 namespace Chess
 {
-	public class Bishop : ChessPiece
+	public class Bishop : Piece
 	{
-		public Bishop(ChessColor color, Position position) : base(color, position)
+		public Bishop(Color color, Position position) : base(color, position)
 		{
-			character = (color == ChessColor.Black) ? '\u265D' : '\u2657';
+			character = (color == Color.Black) ? '\u265D' : '\u2657';
 		}
 		
 		public override string GetName()

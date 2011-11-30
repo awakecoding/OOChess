@@ -2,11 +2,11 @@ using System;
 
 namespace Chess
 {
-	public class Pawn : ChessPiece
+	public class Pawn : Piece
 	{
-		public Pawn(ChessColor color, Position position) : base(color, position)
+		public Pawn(Color color, Position position) : base(color, position)
 		{
-			character = (color == ChessColor.Black) ? '\u265F' : '\u2659';
+			character = (color == Color.Black) ? '\u265F' : '\u2659';
 		}
 		
 		public override string GetName()

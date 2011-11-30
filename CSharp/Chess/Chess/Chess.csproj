@@ -44,8 +44,8 @@
     <Compile Include="Knight.cs" />
     <Compile Include="Pawn.cs" />
     <Compile Include="Position.cs" />
-    <Compile Include="ChessSet.cs" />
-    <Compile Include="ChessPiece.cs" />
+    <Compile Include="Piece.cs" />
+    <Compile Include="Set.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
