@@ -13,11 +13,11 @@ namespace Chess
 		private King king;
 		private Queen queen;
 		private Rook rookA;
-		private Rook rookH;
+		private Rook rookB;
+		private Knight knightA;
 		private Knight knightB;
-		private Knight knightG;
-		private Bishop bishopC;
-		private Bishop bishopF;
+		private Bishop bishopA;
+		private Bishop bishopB;
 		private Pawn pawnA;
 		private Pawn pawnB;
 		private Pawn pawnC;
@@ -37,14 +37,14 @@ namespace Chess
 			pieces = new Piece[16];
 		
 			rank = (color == Color.Black) ? 8 : 1;
-			pieces[2] = rookA = new Rook(color, new Position(rank, 'a'));
-			pieces[6] = knightB = new Knight(color, new Position(rank, 'b'));
-			pieces[4] = bishopC = new Bishop(color, new Position(rank, 'c'));
-			pieces[0] = king = new King(color, new Position(rank, 'd'));
-			pieces[1] = queen = new Queen(color, new Position(rank, 'e'));
-			pieces[5] = bishopF = new Bishop(color, new Position(rank, 'f'));
-			pieces[7] = knightG = new Knight(color, new Position(rank, 'g'));
-			pieces[3] = rookH = new Rook(color, new Position(rank, 'h'));
+			pieces[0] = rookA = new Rook(color, new Position(rank, 'a'));
+			pieces[1] = knightA = new Knight(color, new Position(rank, 'b'));
+			pieces[2] = bishopA = new Bishop(color, new Position(rank, 'c'));
+			pieces[3] = king = new King(color, new Position(rank, 'd'));
+			pieces[4] = queen = new Queen(color, new Position(rank, 'e'));
+			pieces[5] = bishopB = new Bishop(color, new Position(rank, 'f'));
+			pieces[6] = knightB = new Knight(color, new Position(rank, 'g'));
+			pieces[7] = rookB = new Rook(color, new Position(rank, 'h'));
 			
 			rank = (color == Color.Black) ? 7 : 2;
 			pieces[8] = pawnA = new Pawn(color, new Position(rank, 'a'));
