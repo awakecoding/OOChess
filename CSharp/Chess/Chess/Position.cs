@@ -28,7 +28,7 @@ namespace Chess
 			
 			set
 			{
-				if (value > 0 && value < 8)
+				if (value >= 0 && value < 8)
 				{
 					rowIndex = value;
 					rank = rowIndex + 1;
@@ -42,7 +42,7 @@ namespace Chess
 			
 			set
 			{
-				if (value > 0 && value < 8)
+				if (value >= 0 && value < 8)
 				{
 					colIndex = value;
 					file = (char) (colIndex + 0x61);
