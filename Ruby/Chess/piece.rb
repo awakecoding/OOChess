@@ -1,8 +1,12 @@
 
+require './position.rb'
+
 class Piece
   
-  def initialize()
+  def initialize(color, position)
     @name = "Piece"
+    @color = color
+    @position = position
   end
   
   def GetName()
@@ -10,7 +14,7 @@ class Piece
   end
   
   def to_s
-    return GetName()
+    return @color + " " + GetName() + " (" + @position.to_s() + ")"
   end
   
 end
